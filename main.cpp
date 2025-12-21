@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 #include <string>
 #include <cstdlib>
 #include <ctime>
@@ -10,9 +10,9 @@ bool isL(char c) {
         return true;
     }
 
-    if ((c >= 'А' && c <= 'я') || c == 'ё' || c == 'Ё') {
-        return true;
-    }
+    // if ((c >= 'А' && c <= 'я') || c == 'ё' || c == 'Ё') {
+    //     return true;
+    // }
 
     return false;
 }
@@ -23,24 +23,24 @@ char toL(char c) {
         return c + 32;
     }
 
-    if (c >= 'А' && c <= 'Я') {
-        return c + 32;
-    }
+    // if (c >= 'А' && c <= 'Я') {
+    //     return c + 32;
+    // }
 
-    if (c == 'Ё') {
-        return 'ё';
-    }
+    // if (c == 'Ё') {
+    //     return 'ё';
+    // }
 
     return c;
 }
 
 int main() {
-    setlocale(LC_ALL, "RUS");
+    setlocale(LC_ALL, "RU");
     srand(static_cast<unsigned int>(time(0)));
 
     const char* words[] = {
-        "программа", "компьютер", "алгоритм",
-        "переменная", "функция", "класс", "чайник","скибиди"
+        "programm", "computer", "algorithm",
+        "peremenia", ""
     };
 
     const int NUM_WORDS = sizeof(words) / sizeof(words[0]);
