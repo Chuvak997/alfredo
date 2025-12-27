@@ -10,9 +10,6 @@ bool isL(char c) {
         return true;
     }
 
-    // if ((c >= 'А' && c <= 'я') || c == 'ё' || c == 'Ё') {
-    //     return true;
-    // }
 
     return false;
 }
@@ -23,14 +20,6 @@ char toL(char c) {
         return c + 32;
     }
 
-    // if (c >= 'А' && c <= 'Я') {
-    //     return c + 32;
-    // }
-
-    // if (c == 'Ё') {
-    //     return 'ё';
-    // }
-
     return c;
 }
 
@@ -40,7 +29,7 @@ int main() {
 
     const char* words[] = {
         "programm", "computer", "algorithm",
-        "peremenia", ""
+        "peremenia", "PUBG"
     };
 
     const int NUM_WORDS = sizeof(words) / sizeof(words[0]);
@@ -119,4 +108,5 @@ int main() {
 
     return 0;
 }
+
 
