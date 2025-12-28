@@ -25,11 +25,15 @@ char toL(char c) {
 
 int main() {
     setlocale(LC_ALL, "RU");
-    srand(static_cast<unsigned int>(time(0)));
+    srand(time(0));
 
     const char* words[] = {
         "programm", "computer", "algorithm",
-        "peremenia", "PUBG"
+        "pelemenia", "PUBG", "DOMINIKTORETO",
+        "family", "derbent", "MAXMAXBETOV", "NastavnikSaitamiByba",
+        "CrishtianoRonaldo","RahmetBrat", "ShavhalChurkachaev", "Braitiiiish","Kimpintiooo",
+        "SUBO", "kondisioner", "lavash", "DonaldTramp", "Zeleboba","Ivandaun",
+        "Skibidi", "PIDIDI", "herobrin"
     };
 
     const int NUM_WORDS = sizeof(words) / sizeof(words[0]);
@@ -48,7 +52,7 @@ int main() {
     char letter;
     bool win = false;
 
-    cout << "Добро пожаловать в игру 'Виселица'!\n";
+    cout << "Добро пожаловать в игру: 'Виселица'!\n";
     cout << "Угадайте слово из " << word_len << " букв.\n";
     cout << "У вас есть " << attempts << " попыток.\n\n";
 
@@ -100,13 +104,14 @@ int main() {
     }
 
     if (win) {
+        cout << "\n\t\tПоздравляем!\t\t\t\n";
+        cout << "Вы разумный и смышлённый такие годятся к нам в интерпол!\n";
         cout << "Поздравляем! Вы угадали слово: " << word << endl;
     }
     else {
+        cout << "Деградация на вышем уровне!"<< endl;
         cout << "Вы проиграли! Загаданное слово было: " << word << endl;
     }
-
-    return 0;
+return 0;
 }
-
 
