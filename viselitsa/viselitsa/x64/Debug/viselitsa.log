@@ -1,0 +1,3 @@
+﻿  visel.cpp
+C:\Users\DNS\source\repos\viselitsa\viselitsa\visel.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  viselitsa.vcxproj -> C:\Users\DNS\source\repos\viselitsa\x64\Debug\viselitsa.exe
